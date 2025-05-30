@@ -13,3 +13,5 @@ class Car{
         $this->color = $color;
     }
 }
+$car01 = new Car("Volvo", "green");
+$car01 = new Car("BMW");
