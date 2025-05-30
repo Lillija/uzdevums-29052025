@@ -5,7 +5,7 @@ class Car{
 
     private $brand;
     private $color;
-    public $vehicleType = "Car";
+    private $vehicleType = "Car";
 
     //Constructor
     public function __construct($brand,$color = "none"){
@@ -18,7 +18,3 @@ class Car{
         return "Brand: " . $this->brand . ", Color: " . $this->color;
     }
 }
-$car01 = new Car("Volvo", "green");
-echo $car01->getCarInfo();
-echo "<br>";
-echo $car01->vehicleType;

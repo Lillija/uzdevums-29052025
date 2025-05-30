@@ -7,14 +7,10 @@
 </head>
 <body>
     <?php
-    $brand = "Volvo";
-    $color = "Green";
+    require_once 'Classes/Car.php';
 
-    function getCarInfo($brand,$color){
-        return "Brand: " . $brand . ", Color: " . $color;
-    }
-
-    echo getCarInfo($brand, $color);
+    $car01 = new Car("BMW", "green");
+    echo $car01->$vehicleType;
 ?>
 </body>
 </html>
